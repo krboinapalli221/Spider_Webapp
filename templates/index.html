@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spider Web App</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            padding: 50px;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            padding: 50px;
+            background-image: url('/static/spider.jpg'); /* Use the actual image file name */
+            background-size: cover;
+            color: #333;
+        }
+        h1 {
+            color: #eaf3f2;
+            font-size: 3em;
+            text-shadow: 2px 2px 2px #ccc;
+        }
+        p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+        form {
+            margin-top: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #3498db;
+        }
+        input {
+            padding: 8px;
+            margin: 5px 0;
+            width: 200px;
+            box-sizing: border-box;
+            border: 1px solid #34db3c;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #dbd834;
+            color: #fff;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the Spider Web App!</h1>
+    <p>This is a stylish web application created using Flask.</p>
+
+    <form action="/greet" method="post">
+        <label for="name">Enter your name:</label>
+        <input type="text" id="name" name="name" required>
+        <button type="submit">Greet Me</button>
+    </form>
+</body>
+</html>
